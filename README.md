@@ -1,2 +1,4 @@
 # motionEquation-Solver
-Physics Motion Equation S0lver!
+
+Physics Motion Equ@tion S0lver!
+-Ryan Jayaswal
