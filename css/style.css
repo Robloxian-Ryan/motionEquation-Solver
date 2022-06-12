@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 200ms;
+}
+
+*:focus {
+    outline: 0.1em solid #457b9d;
+    transition: 100ms;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #bde0fe;
+}
+
+body>h1 {
+    color: #457b9d;
+    background-color: #a2d2ff;
+    font-family: "Cinzel", sans-serif;
+    text-align: center;
+}
+
+body>h1 sup {
+    font-family: "Cinzel", sans-serif;
+    color: #cce6ff;
+}
+
+body>h1>span {
+    padding: 0.3em 0;
+    display: block;
+    font-size: 0.55em;
+    color: #457b9d;
+    background-color: #bde0fe;
+}
+
+main {
+    min-height: 65%;
+    min-width: 70%;
+    padding: 5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #edf6f9;
+}
+
+#initial-screen #equation,
+#initial-screen #solve-btn,
+#initial-screen #restart-btn,
+#equation-screen #restart-btn {
+    visibility: hidden;
+    transition: all 200ms;
+}
+
+#solution-screen #restart-btn {
+    visibility: visible;
+}
+
+input {
+    margin: 1vw;
+    padding: 0.5em 0.1em;
+    width: 4em;
+    text-align: center;
+    border: 0.1em solid #a2d2ff;
+    color: #457b9d;
+    background-color: #bde0fe;
+}
+
+input::placeholder {
+    color: #457b9d;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+#upon {
+    height: 0.1em;
+    width: 100%;
+    margin: 0.4em 0;
+    display: block;
+    background-color: #457b9d;
+}
+
+#equation {
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    color: #457b9d;
+    transition: all 200ms;
+}
+
+#lhs {
+    padding: 0.6em;
+    color: #edf6f9;
+    background-color: #457b9d;
+}
+
+#restart-btn {
+    position: absolute;
+    bottom: 15vh;
+}
+
+label {
+    font-size: 1em;
+    text-align: center;
+}
+
+label>span {
+    margin-bottom: 0.5em;
+    padding: 0.3em 0;
+    display: block;
+    text-align: left;
+    text-indent: 1em;
+    color: #457b9d;
+    background-color: #cce6ff;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: none;
+    color: #edf6f9;
+    background-color: #457b9d;
+}
+
+#solution-screen main {
+    position: relative;
+    color: #457b9d;
+}

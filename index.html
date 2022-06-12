@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Equation Solver</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/custom-select.css" />
+    <script src="./js/custom-select.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body id="initial-screen">
+    <h1>Motion Equation Solver<span>Solve Motion Equations with Ease !</span></h1>
+    <main>
+        <label for="find">
+        <span>To Find:</span>
+        <select name="find" id="find">
+          <option value="to-find" selected disabled>To Find</option>
+        </select>
+      </label>
+        <label for="given">
+        <span>Given:</span>
+        <select name="given" id="given">
+          <option value="given" selected disabled>Given</option>
+        </select>
+      </label>
+
+        <div id="equation"></div>
+        <button id="solve-btn">Solve!</button>
+        <h2>-Made by Ryan Jayaswal</h2>
+    </main>
+    <button id="restart-btn" onclick="location.reload()">
+      Solve One More?
+    </button>
+</body>
+
+</html>
